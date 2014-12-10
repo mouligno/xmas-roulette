@@ -1,0 +1,17 @@
+h1 Users list
+table
+  thead
+    tr
+      th Firstname
+      th Lastname
+      th Email
+      th
+      th
+  tbody
+    - users.each do |u|
+      tr
+        td = u.first_name
+        td = u.last_name
+        td = u.email
+        td = link_to 'Edit', edit_user_path(u), class: 'button'
+        td = button_to 'Delete', u, method: :delete, class: 'button alert'

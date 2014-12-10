@@ -1,0 +1,6 @@
+h1 Create an unoffer association
+
+= simple_form_for unoffering do |f|
+    = f.input :user_offering_id, collection: users, label_method: :full_name, value_method: :id
+    = f.input :user_not_offering_to, collection: users, label_method: :full_name, value_method: :id
+    = f.button :submit, class: 'button'

@@ -1,0 +1,6 @@
+h1 Add a user
+= simple_form_for user do |f|
+    = f.input :first_name, autofocus: true
+    = f.input :last_name
+    = f.input :email
+    = f.button :submit, class: 'button'

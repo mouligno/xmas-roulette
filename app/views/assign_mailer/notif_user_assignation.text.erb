@@ -1,0 +1,13 @@
+Hello <%= User.find(@assignation.user_offering_id).first_name %>
+
+------
+La moulinette est passée.
+-----
+
+Tu offres donc à : <%= "#{User.find(@assignation.user_receiving_id).first_name} #{User.find(@assignation.user_receiving_id).last_name}" %>.
+
+Le thème est : <%= @assignation.gift_theme %>
+
+On se retrouve le 20 décembre.
+
+La moulinette.

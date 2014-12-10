@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_offering_id: 1
+  user_receiving_id: 1
+  gift_theme: MyString
+
+two:
+  user_offering_id: 1
+  user_receiving_id: 1
+  gift_theme: MyString

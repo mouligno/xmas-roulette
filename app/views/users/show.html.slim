@@ -1,0 +1,10 @@
+h1 See user
+
+h2
+  = user.first_name
+  = user.last_name
+
+h3 = user.email
+
+= link_to 'Edit', edit_user_path(user), class: 'button'
+

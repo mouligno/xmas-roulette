@@ -1,0 +1,14 @@
+h1 Gift associations
+table
+  tbody
+    - unless gift_associations.nil?
+      - gift_associations.each do |g|
+        tr
+          td = User.find(g.user_offering_id).full_name
+          td offers to
+          td = User.find(g.user_receiving_id).full_name
+          td = g.gift_theme
+
+hr
+
+= link_to 'Launch the moulinette', assign_gift_associations_path()

@@ -1,0 +1,9 @@
+h1 List of contraints
+table
+  tbody
+    - unofferings.each do |u|
+      tr
+        td = User.find(u.user_offering_id).full_name
+        td  can not offer to
+        td = User.find(u.user_not_offering_to).full_name
+        td = button_to 'Delete', u, method: :delete, class: 'button alert tiny'
